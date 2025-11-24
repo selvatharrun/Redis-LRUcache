@@ -1,1 +1,1 @@
-# Redis-fs
+# Redis-with LRU cache.
