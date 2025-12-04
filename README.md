@@ -42,16 +42,16 @@ The cache utilizes two primary components working in tandem:
 2.  **Doubly Linked List:** Maintains access order. The **Head** is the most recently used; the **Tail** is the candidate for eviction.
 
 ```mermaid
-graph TD;
+graph TD
     subgraph HashMap
-    K1[Key: "user:1"]
-    K2[Key: "user:2"]
+        K1["Key: user:1"]
+        K2["Key: user:2"]
     end
 
-    subgraph Doubly Linked List
-    N1[Node: "user:1"]
-    N2[Node: "user:2"]
-    N3[Node: "user:3"]
+    subgraph "Doubly Linked List"
+        N1["Node: user:1"]
+        N2["Node: user:2"]
+        N3["Node: user:3"]
     end
 
     K1 --> N1
